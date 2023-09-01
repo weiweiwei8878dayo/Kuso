@@ -1,8 +1,42 @@
-<h1>あなたのスマートフォンにウイルスを挿入中...</h1>
-<h1>挿入完了！</h1>
-<h1>住所...電話番号...特定中...</h1>
-<h1>特定完了！</h1>
-<h1>You are an idiot</h1>
 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+          <!--
+            timerID = setInterval('countdown()', 1000);   // 1秒ごとにcountdown()を呼び出し
+            var count = 20;    // カウントの初期値
 
+            function countdown(){
+              count--;
+              document.getElementById('timer').innerHTML = "破損が永久に残るまで残り" + count + "秒です。";
+              if(count<0){
+                document.getElementById('timer').innerHTML = "あなたのシステムは破壊されました。ご愁傷様。";
+              }
+            }
+          -->
+        </script>
+    </head>
+    <body>
+        <div style="text-align: center;">
+            あなたのシステムは危険にさらされています！<br>
+            <br>
+            即時の行動が必要です。<br>
+            <br>
+            <p style="color: red;">
+              <span id="timer"></span>
+            </p>
+            ただちにスキャンしてくだちい。<br>
 
+            <input type="button" value="スキャン" onclick="alert('騙されましたね！');">
+            <br>
+            <br>
+
+            <img src="./mspartners.png">
+            <img src="./appcare_o.png">
+
+            <br>
+            <br>
+        </div>
+    </body>
+</html>
